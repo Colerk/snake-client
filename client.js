@@ -13,10 +13,21 @@ const connect = function() {
     console.log(data);
   });
 
+  // message on entering
+
   conn.on('connect', () => {
     console.log('Your in baby!')
     conn.write("Name: CK")
   })
+
+  //movement block
+
+  // conn.on('connect', () => {
+  //   setInterval(() => {
+  //     conn.write("Move: up")
+  //   }, 300)
+  // });
+
 
 
   return conn;
