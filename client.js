@@ -13,6 +13,11 @@ const connect = function() {
     console.log(data);
   });
 
+  conn.on('connect', () => {
+    console.log('Your in baby!')
+    conn.write("Name: CK")
+  })
+
 
   return conn;
 }
