@@ -5,10 +5,10 @@ const setupInput = require('./input');
 
 
 console.log('Connecting ...');
-connect();
+// connect();
 
 
-setupInput();
+setupInput(connect());
 
 
 //cd w2/d3/snake-game
